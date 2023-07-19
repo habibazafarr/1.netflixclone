@@ -1,0 +1,222 @@
+﻿body {
+    background-color: black;
+    color: white;
+}
+
+.background_Image {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(Images/Netflix.jpg);
+    background-size: cover;
+    background-position: center;
+    padding:10px,8px;
+    position:relative;
+}
+
+nav.header{   
+    height:20%;
+    width:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px,60px,10px,60px;    
+}
+
+.logo {
+    width: 150px;
+    padding:30px;
+    cursor: pointer;
+}
+
+nav button{
+    border:0px;
+    outline:0px;
+    background:red;
+    color:white;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.lang_btn{
+    display:inline-flex;
+    background: transparent;
+    border: 1px solid;   
+}
+.downArrow {
+    display: inline-flex;
+    height: 15px;
+    width: 15px;
+    padding:2px;
+}
+.header_content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    transform: translate(-50%,-50%);
+    margin-top:50px;
+}
+                
+.header_content h1{
+  font-size: 60px;
+  line-height:70px;
+  font-weight:600;
+  max-width:650px;
+}
+
+.header_content h2{
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.email_signup{
+    background:#fff;
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+    overflow:hidden;
+}
+
+.email_signup input{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left:20px;
+    
+}
+
+.email_signup button{
+    background: #db0001;
+    border:0;
+    outline:0;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    padding:15px 30px;
+
+}
+
+.part2{
+    padding:50px 12px;
+    border:3px black solid;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-content:space-between;
+    
+}
+
+.part2_content {
+    position: relative;
+    top: 100px;
+    
+}
+
+.part2_content h1{
+    font-size:40px;
+
+}
+.part2_content p{
+    font-size:20px;
+    width:350px;
+}
+
+.FAQ{
+   
+    text-align:center;
+   font-size:18px;
+    
+}
+   .FAQ h2{
+       font-weight:500;
+       font-size:50px;
+   }
+.tab {
+    position: relative;
+    background: rgba(19, 33, 68, 1);
+    padding: 0px 20px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1% 8%;
+    font-size: 30px;
+}
+.tab input{
+    appearance:none;
+}
+    .tab label {
+        display: flex;
+        align-items:center;
+        cursor:pointer;   
+        height:40px;
+        
+    }
+    .tab label::after{
+        content: "+";
+        position:absolute;
+        right:20px;
+        font-size:40px;
+        color: white;
+        transition:transform 5s;
+    }
+    .tab:hover label::after{
+        color:#333;
+    }
+    .tab input:checked ~ label::after{
+        transform:rotate(135deg);
+    }
+    .content{
+        max-height:0;
+        transition:1s;
+        overflow:hidden;
+    }
+
+    .tab input:checked ~ .content{
+        max-height:100vh;
+    }
+
+.FAQ .email_signup{
+    max-width:600px;
+    margin:20px auto 60px;
+    color: aqua;
+}
+
+.FAQ small{
+    font:12px;
+}
+
+.footer {
+    padding: 50px 15%;
+    border-top: 6px solid #333;
+}
+.footer h2{
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+
+.footer .col{
+    flex-basis:25%;
+    flex-grow:1;
+    margin-bottom:20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration:none;
+    color:#777;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.footer .row{
+    display:flex;
+    align-items:flex-start;
+    padding:10px 0;
+}
+.footer button{
+    color:#fff;
+    padding: 10px 20px;
+    border-radius:3px;
+}
